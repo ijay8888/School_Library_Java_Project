@@ -326,7 +326,9 @@
         <div class="container header-content">
             <div class="logo">
                 <i class="fas fa-book-open"></i>
-                <span>My Library</span>
+                <span onclick="window.location.href='/library/home'" style="cursor: pointer;">
+                	My Library
+                </span>
             </div>
             <nav>
                 <ul>
