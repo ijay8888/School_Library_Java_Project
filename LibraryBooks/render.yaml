@@ -1,7 +1,7 @@
 services:
   - type: web
     name: school-library
-    env: java
+    env: docker   # or java if visible
     buildCommand: ./mvnw -DskipTests=true clean package
-    startCommand: java -Dserver.port=$PORT -jar target/LibraryBooks-0.0.1-SNAPSHOT.jar
+    startCommand: java -Dserver.port=$PORT -jar target/LibraryBooks-0.0.1-SNAPSHOT.war
     plan: free
